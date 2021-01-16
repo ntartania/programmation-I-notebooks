@@ -13336,6 +13336,139 @@ Le plus grand en valeur absolue est:-8.0
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Exercice-8">Exercice 8<a class="anchor-link" href="#Exercice-8">&#182;</a></h4><p>Écrire <strong>les en-têtes (seulement)</strong> des fonctions spécifiées ci-dessous:</p>
+<ul>
+<li>Une fonction <code>longueur</code> qui prend en entrée une chaine de caractères renvoie la longueur (nombre de caractères) de cette chaîne de caractères.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">longueur</span><span class="p">(</span><span class="n">String</span> <span class="n">chaine</span><span class="p">)</span>
+</pre></div>
+<p>(le nom du paramètre n'a aucune importance)</p>
+<ul>
+<li>Une fonction <code>estPair</code> qui prend en entrée un entier et retourne <code>true</code> si ce nombre est pair, sinon <code>false</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kt">boolean</span> <span class="nf">estPair</span><span class="p">(</span><span class="kt">int</span> <span class="n">nombre</span><span class="p">)</span>
+</pre></div>
+<ul>
+<li>Une fonction <code>minimum</code> qui prend en entrée deux nombres quelconques et renvoie le minimum des différentes valeurs.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kt">double</span> <span class="nf">minimum</span><span class="p">(</span><span class="kt">double</span> <span class="n">nbr1</span><span class="p">,</span> <span class="kt">double</span> <span class="n">nbr2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Exercice-9">Exercice 9<a class="anchor-link" href="#Exercice-9">&#182;</a></h4><p>Compléter la déclaration de fonction suivante, qui prend un entier (<code>int</code>) en entrée et renvoie en sortie la moitié de ce nombre (attention à la division entière: on veut que le résultat soit exact):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">double</span> <span class="nf">moitie</span><span class="p">(</span><span class="kt">int</span> <span class="n">nbr</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">nbr</span> <span class="o">*</span><span class="mf">1.0</span> <span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Exercice-10">Exercice 10<a class="anchor-link" href="#Exercice-10">&#182;</a></h4><p>On veut écrire une fonction <code>croissant</code> qui prend trois valeurs <code>double</code> en entrée, et retourne <code>true</code> s'ils sont triés dans l'ordre croissant. Écrire trois tests bien choisis pour cette fonction, en utilisant la fonction <code>verifier</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="kc">true</span><span class="p">,</span> <span class="s">&quot;erreur: croissants stricts&quot;</span><span class="p">);</span>
+<span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="kc">true</span><span class="p">,</span> <span class="s">&quot;erreur: croissants au sens large&quot;</span><span class="p">);</span>
+<span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">==</span><span class="kc">false</span><span class="p">,</span> <span class="s">&quot;erreur: non croissants&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ces tests n'étaient pas les seuls possibles, mais l'idée était de vérifier que la fonction marche pour une suite strictement croissante, une suite croissante avec des nombres égaux, et une suite non croissante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Exercice-11">Exercice 11<a class="anchor-link" href="#Exercice-11">&#182;</a></h4><p>Écrire la fonction <code>croissant</code> et utiliser les tests pour vérifier qu'elle est correcte.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="nf">croissant</span><span class="p">(</span><span class="kt">double</span> <span class="n">v1</span><span class="p">,</span> <span class="kt">double</span> <span class="n">v2</span><span class="p">,</span> <span class="kt">double</span> <span class="n">v3</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">v2</span><span class="o">&gt;=</span><span class="n">v1</span> <span class="o">&amp;&amp;</span> <span class="n">v3</span><span class="o">&gt;=</span> <span class="n">v2</span><span class="p">){</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">void</span> <span class="nf">verifier</span><span class="p">(</span><span class="kt">boolean</span> <span class="n">condition</span><span class="p">,</span> <span class="n">String</span> <span class="n">messageDErreur</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">condition</span><span class="p">){</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">messageDErreur</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="kc">true</span><span class="p">,</span> <span class="s">&quot;erreur: croissants stricts&quot;</span><span class="p">);</span>
+<span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="kc">true</span><span class="p">,</span> <span class="s">&quot;erreur: croissants au sens large&quot;</span><span class="p">);</span>
+<span class="n">verifier</span><span class="p">(</span><span class="n">croissant</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">==</span><span class="kc">false</span><span class="p">,</span> <span class="s">&quot;erreur: non croissants&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Succès!</p>
+
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
